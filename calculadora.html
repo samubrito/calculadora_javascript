@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div class="fundo">
+        <h1 id="nome">Samuel Brito</h1>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td class="botao" onclick="limpar()">C</td>
+                    <td class="botao" onclick="apagar()"><</td>
+                    <td class="botao" onclick="inserir('/')">/</td>
+                    <td class="botao" onclick="inserir('*')">*</td>
+                </tr>
+
+                <tr>
+                    <td class="botao" onclick="inserir('7')">7</td>
+                    <td class="botao" onclick="inserir('8')">8</td>
+                    <td class="botao" onclick="inserir('9')">9</td>
+                    <td class="botao" onclick="inserir('-')">-</td>
+                </tr>
+
+                <tr>
+                    <td class="botao" onclick="inserir('4')">4</td>
+                    <td class="botao" onclick="inserir('5')">5</td>
+                    <td class="botao" onclick="inserir('6')">6</td>
+                    <td class="botao" onclick="inserir('+')">+</td>
+                </tr>
+
+                <tr>
+                    <td class="botao" onclick="inserir('1')">1</td>
+                    <td class="botao" onclick="inserir('2')">2</td>
+                    <td class="botao" onclick="inserir('3')">3</td>
+                    <td class="botao" rowspan="2" onclick="calcular()">=</td>
+                </tr>
+
+                <tr>
+                    <td class="botao" colspan="2" onclick="inserir('0')">0</td>
+                    <td class="botao" onclick="inserir('.')">.</td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
